@@ -37,9 +37,10 @@ def question5():
 def question6():
   x= 80 
   y= 70 
-  distance = 490-150
-  answer = ((distance/y) - (distance/x))*60
-  return answer
+  distance=490-150
+  t_in_h = distance/(x+y)
+  t_in_min=t_in_h * 60  
+  return t_in_min
 #print statements
 print(question1())
 print(question2())
