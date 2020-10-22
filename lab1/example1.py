@@ -48,7 +48,7 @@ def exercise():
   tempo = 6
   original_time= 6*60 + 52 #converted it into minutes
   final_time_min = original_time + (1*easy_pace) + (3*tempo) + (2*easy_pace)
-  min_left= int(((final_time_min/60)-(final_time_min//60))*60)
+  min_left= int(final_time_min%60)
   final_time = str(final_time_min//60) + ":" + str(min_left)
   return final_time
 
