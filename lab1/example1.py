@@ -41,6 +41,17 @@ def question6():
   t_in_h = distance/(x+y)
   t_in_min=t_in_h * 60  
   return t_in_min
+
+#exercise from slides
+def exercise():
+  easy_pace = 8
+  tempo = 6
+  original_time= 6*60 + 52 #converted it into minutes
+  final_time_min = original_time + (1*easy_pace) + (3*tempo) + (2*easy_pace)
+  min_left= int(((final_time_min/60)-(final_time_min//60))*60)
+  final_time = str(final_time_min//60) + ":" + str(min_left)
+  return final_time
+
 #print statements
 print(question1())
 print(question2())
@@ -48,4 +59,6 @@ print(question3(2,6,-20))
 print(question4())
 print(question5())
 print(question6())
+print(exercise())
 #in case you see this I already know programming that's why I know how to define a function 
+
