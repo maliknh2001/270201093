@@ -38,7 +38,7 @@ def excer3():
   age= int(input("insert an age"))
   ticket = 3
   if age < 6 or age > 60:
-    ticket = 3
+    ticket = 0
   elif age >= 6 and age <=18:
     ticket= 0.5* ticket
   else:
