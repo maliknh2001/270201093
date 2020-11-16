@@ -11,3 +11,19 @@ for i in range(b):
     even_num+=1
 result= (even_num /b) * 100
 print(str(result)+"%")
+
+#excersize3
+num1 = input("Enter number 1: ")
+num2 = input("Enter number 2: ")
+match = 0
+if len(num1) > len(num2):
+  for i in reversed(num1):
+    for x in reversed(num2):
+      if x == i:
+        match+=1
+else:
+  for i in reversed(num2):
+    for x in reversed(num1):
+      if x == i:
+        match+=1
+print(match)
