@@ -26,4 +26,18 @@ else:
     for x in reversed(num1):
       if x == i:
         match+=1
+
 print(match)
+
+#excersize 4
+pin= "abc123"
+x=""
+while x != pin:
+  x=input("Enter a password")
+  if x == "help":
+    print(pin[0])
+  elif x == pin:
+    print("Welcome")
+    break
+  else:
+    print("Wrong")
