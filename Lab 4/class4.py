@@ -38,6 +38,5 @@ while x != pin:
     print(pin[0])
   elif x == pin:
     print("Welcome")
-    break
   else:
     print("Wrong")
