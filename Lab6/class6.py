@@ -20,3 +20,14 @@ if inputted_email == email:
   print("email is correct")
 else:
   print("email is wrong")
+  #question 2:
+  grades= [[50,90,60],[15,60,75],[99,95,91]]
+  average_grade=[]
+  summation=0
+  for i in grades:
+    length=len(i)
+    for x in i:
+      summation= summation+x
+    average=summation/length
+    average_grade.append(average)
+  print(average_grade)
