@@ -18,7 +18,17 @@ for keys in books:
   value_2 = len(set(keys))
   dic[keys]= (value_1 , value_2)
 print(dic)
-      
+
+#exersize 3:
+summation = 0
+for key in dic:
+  value1,value2 = dic[key]
+  summation += value1 + value2
+  value3= summation/2
+  dic[key]= (value1,value2,value3)
+
+print(dic)
+    
     
     
   
