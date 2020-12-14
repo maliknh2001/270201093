@@ -24,7 +24,14 @@ def is_prime(number):
         return False
     return True
 
-print(is_prime(1))
+
+
+def print_primes_between(a,b):
+  for i in range(a,b+1):
+    if is_prime(i):
+      print(i)
+
+print_primes_between(5,85)
 
 
 
