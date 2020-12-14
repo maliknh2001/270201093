@@ -20,11 +20,11 @@ def is_prime(number):
     return True
   else:
     for i in main_list:
-      if number % i == 0:
+      if number % i == 0 or number<=1:
         return False
     return True
 
-print(is_prime(41))
+print(is_prime(1))
 
 
 
