@@ -21,13 +21,24 @@ print(dic)
 
 #exersize 3:
 summation = 0
-for key in dic:
+for key in dic.keys():
   value1,value2 = dic[key]
   summation += value1 + value2
   value3= summation/2
-  dic[key]= (value1,value2,value3)
+  dic[key]= (value1,value2,value3) 
+  print(key, "->", dic[key])
 
-print(dic)
+
+#exersize 4
+employee_dic = {}
+for i in range(5):
+  employee_name = input("Insert the employee name:\t")
+  employee_salary= int(input("Insert the employee salary:\t"))
+  employee_dic[employee_name] = employee_salary
+
+print(employee_dic.values())
+  
+
     
     
     
