@@ -1,6 +1,5 @@
 """
 Name: Malik
-Id: 270201093
 Section: 4
 Topic: Recursive & iterative functions
 This program is used as a medium for answers discussed in lab 9 
