@@ -8,8 +8,8 @@ def selectionSort(lst):
       if x1>lst[i]:
         x1=lst[i]
         x = i
-    del lst[x]
-    return [x1] + selectionSort(lst)
+    lst[0], lst[x] = x1, lst[0]
+    return [lst[0]] + selectionSort(lst[1:])
 
 print(selectionSort([4,3,1,2,-1,-4,5,7,8]))
 
