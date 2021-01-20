@@ -1,2 +1,2 @@
 language = "python3"
-run = "python Lab13/answers.py"
+run = "python All_Labs_reanswered/lab12.py"
